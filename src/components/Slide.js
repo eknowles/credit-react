@@ -15,7 +15,7 @@ class Slide extends Component {
     };
   }
 
-  componentDidMount() {
+  _update() {
     const radius = +this.refs.bar.getAttribute('r');
     const {value, percentage, circumference} = this.flattenValues(this.props.slideValue, this.props.total, radius);
     this.refs.bar.setAttribute('stroke-dasharray', circumference.toString());
@@ -76,7 +76,14 @@ class Slide extends Component {
       easing: 'easeInOutSine',
       offset: 0
     });
+  }
 
+  componentDidMount() {
+    this._update();
+  }
+
+  componentDidUpdate() {
+    this._update();
   }
 
   formatValue(value) {
@@ -111,7 +118,7 @@ class Slide extends Component {
           height="100%"
           width="100%"
           viewBox="0 0 400 400"
-          preserveAspectRatio="xMinYMin meet"
+          preserveAspectRatio="xMidYMid meet"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink">
           <circle
