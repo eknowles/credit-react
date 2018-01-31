@@ -1,4 +1,4 @@
-![prototype](prototype.png?raw=true)
+![prototype](prototype.gif?raw=true)
 
 ![mockup](mockup.png?raw=true)
 
