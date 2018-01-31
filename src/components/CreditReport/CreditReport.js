@@ -19,8 +19,11 @@ class CreditReport extends Component {
       minimumFractionDigits: 0,
       maximumFractionDigits: 0
     });
+  }
 
+  _setup() {
     const info = this.props.report.creditReportInfo;
+
     const change = info.changeInLongTermDebt;
     const totalLimit = info.currentLongTermCreditLimit + info.currentShortTermCreditLimit;
 
@@ -56,6 +59,8 @@ class CreditReport extends Component {
   }
 
   componentDidMount() {
+    this._setup();
+
     setTimeout(() => {
       if (!this.state.currentIndex) {
         this.nextSlide();
@@ -76,6 +81,9 @@ class CreditReport extends Component {
   }
 
   render() {
+    if (!this.slides) {
+      return <div></div>
+    }
     return (
       <BubbleButton onClick={this.nextSlide.bind(this)}>
         <Slide

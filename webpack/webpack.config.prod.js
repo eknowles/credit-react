@@ -1,7 +1,6 @@
 const {resolve} = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const OfflinePlugin = require('offline-plugin');
 const PreloadWebpackPlugin = require('preload-webpack-plugin');
 
 module.exports = {
@@ -52,11 +51,5 @@ module.exports = {
       as: 'script',
       include: 'all',
     }),
-    // new OfflinePlugin({
-    //   ServiceWorker: {
-    //     navigateFallbackURL: '/',
-    //   },
-    //   AppCache: false,
-    // }),
   ],
 };
