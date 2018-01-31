@@ -2,6 +2,18 @@
 
 ![mockup](mockup.png?raw=true)
 
+#### Ref
+
+https://www.instagram.com/p/BAzXbLlOMJO/?taken-by=edwardis
+
+https://www.youtube.com/watch?v=tIjtcL5Z0Wk&feature=youtu.be&t=5
+
+#### Prototype
+
+https://codepen.io/eknowles/pen/zRxwEJ
+
+---
+
 ### Start
 
 Run webpack-dev-server, get ready to code with hot reloading
