@@ -19,6 +19,8 @@ class CreditReport extends Component {
       minimumFractionDigits: 0,
       maximumFractionDigits: 0
     });
+
+    this._setup();
   }
 
   _setup() {
@@ -59,8 +61,6 @@ class CreditReport extends Component {
   }
 
   componentDidMount() {
-    this._setup();
-
     setTimeout(() => {
       if (!this.state.currentIndex) {
         this.nextSlide();
