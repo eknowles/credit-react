@@ -12,6 +12,7 @@ export const Body = styled('div')`
 `;
 
 export const SlideWrapper = styled('div')`
+  border-radius: 50%;
   display: flex;
   height: 300px;
   max-height: 100vh;
