@@ -81,9 +81,6 @@ class CreditReport extends Component {
   }
 
   render() {
-    if (!this.slides) {
-      return <div></div>
-    }
     return (
       <BubbleButton onClick={this.nextSlide.bind(this)}>
         <Slide
