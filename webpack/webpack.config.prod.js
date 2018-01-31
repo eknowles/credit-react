@@ -52,11 +52,11 @@ module.exports = {
       as: 'script',
       include: 'all',
     }),
-    new OfflinePlugin({
-      ServiceWorker: {
-        navigateFallbackURL: '/',
-      },
-      AppCache: false,
-    }),
+    // new OfflinePlugin({
+    //   ServiceWorker: {
+    //     navigateFallbackURL: '/',
+    //   },
+    //   AppCache: false,
+    // }),
   ],
 };

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import { BubbleButton } from '../Styled';
+
 import Slide from './Slide';
 
 class CreditReport extends Component {
@@ -75,7 +77,7 @@ class CreditReport extends Component {
 
   render() {
     return (
-      <div onClick={this.nextSlide.bind(this)}>
+      <BubbleButton onClick={this.nextSlide.bind(this)}>
         <Slide
           color={this.slides[this.state.currentIndex].color}
           slideValue={this.slides[this.state.currentIndex].value}
@@ -84,11 +86,7 @@ class CreditReport extends Component {
           subtitle={this.slides[this.state.currentIndex].subtitle}
           accent={this.slides[this.state.currentIndex].accent}
           format={this.slides[this.state.currentIndex].valueFormatter}></Slide>
-        <div className="demo">
-          <p>Click to goto next slide</p>
-          <a href="https://github.com/eknowles/credit-react" target="_blank">Source code</a>
-        </div>
-      </div>
+      </BubbleButton>
     );
   }
 }

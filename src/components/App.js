@@ -10,9 +10,9 @@ const Home = () => <Async load={import('./Home')}/>;
 
 const App = () => (
   <Body>
-  <Switch>
-    <Route path="/" component={Home}/>
-  </Switch>
+    <Switch>
+      <Route path="/" component={Home}/>
+    </Switch>
   </Body>
 );
 

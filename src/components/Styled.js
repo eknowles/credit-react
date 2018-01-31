@@ -18,3 +18,21 @@ export const SlideWrapper = styled('div')`
   max-width: 100vw;
   cursor: pointer;
 `;
+
+export const BubbleButton = styled('button')`
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  background: none;
+  transition: transform 50ms ease-in;
+  &:active {
+    transform: scale(0.95);
+  }
+`;
+
+export const DemoText = styled('div')`
+  margin-top: 2em;
+  letter-spacing: 1px;
+  font-weight: 600;
+`;

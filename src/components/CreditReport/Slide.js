@@ -26,7 +26,23 @@ class Slide extends Component {
       duration: 3000,
       offset: 0
     })
-    ;
+    .add({
+      targets: this.refs.outline,
+      translateX: [
+        { value: 200, duration: 0, delay: 0, elasticity: 0 },
+        { value: 0, duration: 500, elasticity: 0 }
+      ],
+      translateY: [
+        { value: 200, duration: 0, delay: 0, elasticity: 0 },
+        { value: 0, duration: 500, elasticity: 0 }
+      ],
+      strokeWidth: [500, 2],
+      scale: [0, 1],
+      duration: 500,
+      elasticity: 0,
+      easing: 'linear',
+      offset: 0
+    });
     this._loadSlide();
   }
 
@@ -40,14 +56,6 @@ class Slide extends Component {
 
     // Update the text accent colors
     timeline
-
-    // Simulate a press action on the whole element
-    .add({
-      targets: this.refs.svg,
-      scale: [0.95, 1],
-      duration: 450,
-      offset: 0
-    })
 
     .add({targets: '.bubble__text--color', fill: this.props.color, duration: 2000, elasticity: 600, offset: 500})
 
@@ -147,6 +155,7 @@ class Slide extends Component {
           height="100%"
           width="100%"
           viewBox="0 0 400 400"
+          style={{transform: 'scale(0)'}}
           preserveAspectRatio="xMidYMid meet"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink">
@@ -160,7 +169,7 @@ class Slide extends Component {
                   r="198"
                   cx="200"
                   cy="200"></circle>
-          <g transform="translate(0 400) rotate(-90 0 0)">
+          <g transform="translate(0 400) rotate(-90 0 0)" ref="barWrapper">
             <circle ref="bar"
                     className="bubble__bar"
                     r="190"
