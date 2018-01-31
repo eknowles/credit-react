@@ -1,4 +1,6 @@
-![](mockup.png?raw=true)
+![prototype](prototype.png?raw=true)
+
+![mockup](mockup.png?raw=true)
 
 ### Start
 

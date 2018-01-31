@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import CreditReport from './CreditReport';
+import CreditReport from './CreditReport/CreditReport';
 
 class Home extends Component {
   render() {

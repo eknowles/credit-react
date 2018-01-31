@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>credit</title>
+    <title>Credit Check Mockup</title>
     <link rel="manifest" href="manifest.json">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="React">
+    <meta name="application-name" content="Credit Check Mockup">
     <meta name="apple-mobile-web-app-title" content="React">
     <meta name="theme-color" content="#0080FF">
     <meta name="msapplication-navbutton-color" content="#0080FF">
@@ -15,41 +15,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" sizes="512x512" href="512.png">
     <link rel="apple-touch-icon" type="image/png" sizes="512x512" href="512.png">
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 11px;
+            text-align: center;
+        }
+
+        p, a {
+            color: #ffffff;
+        }
+
+        @keyframes demo {
+            from {transform: translateY(100%); opacity: 0;}
+            to {transform: translateY(0); opacity: 1;}
+        }
+
+        .demo {
+            margin-top: 2em;
+            transform: translateY(100%); opacity: 0;
+            animation-name: demo;
+            animation-duration: 1s;
+            animation-delay: 2s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
         .bubble__bar {
             stroke-width: 8px;
-            fill: transparent; }
+            stroke-linecap: round;
+            stroke: transparent;
+            fill: transparent;
+        }
+
         .bubble__outline {
             stroke-opacity: .65;
-            fill: rgba(0,0,0,.45);
-            stroke: white; }
+            fill: rgba(0, 0, 0, .45);
+            stroke: white;
+        }
+
+        .bubble__text {
+            text-anchor: middle;
+        }
+
         .bubble__title {
             fill: white;
             font-size: 22px;
-            font-weight: 400;}
+            font-weight: 400;
+        }
+
         .bubble__value {
+            fill: transparent;
             font-size: 115px;
-            font-weight: 100; }
+            font-weight: 100;
+        }
+
         .bubble__subtitle {
             fill: white;
             font-size: 19px;
-            font-weight: 300; }
+            font-weight: 300;
+        }
+
         .bubble__accent {
+            fill: transparent;
             font-size: 19px;
             font-weight: 300;
         }
     </style>
-<link rel="preload" href="/credit-react/0.da89469b30a44cef5b3e.js" as="script">
+<link rel="preload" href="/credit-react/0.275cbd820b2276e86cbd.js" as="script">
 <link rel="preload" href="/credit-react/vendor.d2dff4ceb4d85f5d2dbb.js" as="script">
-<link rel="preload" href="/credit-react/main.9debc0e7afae8680acf1.js" as="script">
-<link rel="preload" href="/credit-react/manifest.d56ebddae49ced42d419.js" as="script">
+<link rel="preload" href="/credit-react/main.964b1057855ef9c937cc.js" as="script">
+<link rel="preload" href="/credit-react/manifest.4c931e655d206822e656.js" as="script">
 </head>
 <body>
 <noscript>
-    <a href="http://enable-javascript.com/">Javascript must me enabled to use this site.</a>
+    <a href="http://enable-javascript.com/">Javascript must be enabled to use this site.</a>
 </noscript>
 <react/>
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch"></script>
-<script type="text/javascript" src="/credit-react/manifest.d56ebddae49ced42d419.js"></script><script type="text/javascript" src="/credit-react/vendor.d2dff4ceb4d85f5d2dbb.js"></script><script type="text/javascript" src="/credit-react/main.9debc0e7afae8680acf1.js"></script></body>
+<script type="text/javascript" src="/credit-react/manifest.4c931e655d206822e656.js"></script><script type="text/javascript" src="/credit-react/vendor.d2dff4ceb4d85f5d2dbb.js"></script><script type="text/javascript" src="/credit-react/main.964b1057855ef9c937cc.js"></script></body>
 </html>

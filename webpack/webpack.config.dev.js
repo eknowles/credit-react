@@ -35,7 +35,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
     new HtmlWebpackPlugin({
-      title: 'credit',
+      title: 'Credit Check Mockup',
       template: '../webpack/template.html',
     }),
   ],

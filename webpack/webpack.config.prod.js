@@ -44,7 +44,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      title: 'credit',
+      title: 'Credit Check Mockup',
       template: 'webpack/template.html',
     }),
     new PreloadWebpackPlugin({
